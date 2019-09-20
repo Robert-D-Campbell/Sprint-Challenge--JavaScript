@@ -140,18 +140,17 @@ console.log(universities);
 The resulting contact information strings should have a space between the first name and the email, like this: 
 "Josh josh@example.com"
 Log the result of your new array. */
-const contactInfo = [];
-graduates.map(contact => {
-  contactInfo.push(`${contact.first_name} ${contact.email}`);
+let contactInfo = [];
+contactInfo = graduates.map(contact => {
+  return `${contact.first_name} ${contact.email}`;
 });
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
-const result = graduates.filter(graduates =>
+let unisWithUni = [];
+unisWithUni = graduates.filter(graduates =>
   graduates.university.includes("Uni")
 );
-unisWithUni.push(result);
 console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
@@ -245,9 +244,10 @@ console.log(lowCaseAnimalNames);
 /* Request 3: .filter() 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 */
-const lowPopulationAnimals = [];
-const lowPop = zooAnimals.filter(zooAnimals => zooAnimals.population < 5);
-lowPopulationAnimals.push(lowPop);
+let lowPopulationAnimals = [];
+lowPopulationAnimals = zooAnimals.filter(
+  zooAnimals => zooAnimals.population < 5
+);
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 

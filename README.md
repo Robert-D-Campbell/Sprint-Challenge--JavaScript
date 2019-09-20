@@ -44,7 +44,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
-# Window binding is when you use the .this key word inside the global object. The 'this' keyword points to the nearest object which, in this case, is the global object, or Window Object.
+# Window binding is when you use the this key word inside the global object. The 'this' keyword points to the nearest object which, in this case, is the global object, or Window Object.
 
 # Implicit binding is when you use the 'this' keyword inside of an object. The 'this' keyword points the the nearst object.
 
